@@ -1,0 +1,22 @@
+INDEX.EJS 
+
+              <div class="d-flex flex-column m-5 col-xs-10 col-sm-10 col-md-5 col-lg-5">
+                  <img src="img/materiales.jpg" alt="Venta de materiales electricos" class="img-bienvenidos">
+                  <a href="/materiales" class="btn-bienvenidos">Ir a Edutec-Venta de materiales electricos</a>
+              </div>
+
+INDEX.JS ROUTES
+
+  data.getAllSelectionServ((error, data)=>{
+    if(error){
+        return res.send({
+            error
+        })
+    }
+    const JSONBody = JSON.parse(data);
+    return res.render('index', {
+        title: "Bienvenidos a EDUTEC",
+        JSONBody
+    });
+
+})
