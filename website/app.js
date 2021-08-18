@@ -12,7 +12,6 @@ var consultasMeRouter= require('./routes/consultas-me');
 var contactoEmRouter= require('./routes/contacto-em');
 var contactoMeRouter= require('./routes/contacto-me');
 var productosRouter= require('./routes/productos');
-var serviciosRouter= require('./routes/servicios');
 var ubicacionRouter= require('./routes/ubicacion');
 
 var app = express();
@@ -37,7 +36,6 @@ app.use('/materiales/consultas-me', consultasMeRouter);
 app.use('/matriculado/contacto-em', contactoEmRouter);
 app.use('/materiales/contacto-me', contactoMeRouter);
 app.use('/materiales/productos', productosRouter);
-app.use('/matriculado/servicios', serviciosRouter);
 app.use('/materiales/ubicacion', ubicacionRouter);
 
 

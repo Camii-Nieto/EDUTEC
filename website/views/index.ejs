@@ -13,12 +13,12 @@
   
 
           <div class="seleccion-serv d-flex justify-content-center row">
-            <% selectionServ.forEach(selectionServ => { %>
-              <div class="d-flex flex-column  m-5 col-xs-10 col-sm-10 col-md-5 col-lg-5">
-                  <img src="<%= selectionServ.img %>" alt="<%= selectionServ.imgAlt %>" class="img-bienvenidos">
-                  <a href="<%= selectionServ.page %>" class="btn-bienvenidos"><%= selectionServ.btnDescription %></a>
-              </div>
-            <% }) %>
+            <%selectServ.forEach(serv => {%>
+                <div class="d-flex flex-column  m-5 col-xs-10 col-sm-10 col-md-5 col-lg-5">
+                    <img src="<%= serv.img %>" alt="<%= serv.imgAlt %>" class="img-bienvenidos">
+                    <a href="<%= serv.page %>" class="btn-bienvenidos"><%= serv.btn %></a>
+                </div>
+              <%})%>  
           </div>
       </div>
   </header>

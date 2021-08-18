@@ -7,28 +7,29 @@
     <header>
       <%- include('../partials/nav-em')%>
 
-      <%- include('../partials/carousel')%>
+      <div class="carousel-cont">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <%slidesEm.forEach(slide => {%>
+            <div class="<%= slide.class %>">
+              <img src="<%= slide.img %>" class="d-block w-100 carousel-img" alt="<%= slide.imgAlt %>">
+            </div>
+            <%})%>
+          </div>
+          <%- include('../partials/carouselBtn')%>
+        </div>
+      </div>
     </header>
     <main>
       <section class="sec-servicios">
         <div class="container">
           <h2 class="sec-title">Nuestros servicios</h2>
             <div class="row justify-content-center">
+              <%JSONBody.forEach(service => {%>
               <div class="servicio col-xs-10 col-sm-10 col-md-5 col-lg-2">
-                      <h4 class="serv-title"> <a href="#">Corrección de factor de potencia</a></h4>
+                      <h4 class="serv-title"> <a href="#"><%= service.name %></a></h4>
               </div>
-              <div class="servicio col-xs-10 col-sm-10 col-md-5 col-lg-2">
-                      <h4 class="serv-title"> <a href="#">Instalaciones electricas</a></h4>
-              </div>
-              <div class="servicio col-xs-10 col-sm-10 col-md-5 col-lg-2">
-                      <h4 class="serv-title"> <a href="#">Medición puesta a tierra</a></h4>
-              </div>
-              <div class="servicio col-xs-10 col-sm-10 col-md-5 col-lg-2">
-                      <h4 class="serv-title"> <a href="#">Planos electromecanicos</a></h4>
-              </div>
-              <div class="servicio col-xs-10 col-sm-10 col-md-5 col-lg-2">
-                <h4 class="serv-title"> <a href="#">Certificación de aptitud eléctrica</a></h4>
-        </div>
+              <%})%> 
           </div>
         </div>
       </section>

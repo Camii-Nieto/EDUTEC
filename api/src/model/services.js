@@ -5,21 +5,13 @@ const Service = mongoose.model('Service', {
         type: String,
         required: true        
         },
-    description: {
+    description : {
         type: String,
         required: true
     },
-    img: { 
+    img : {
         type: String,
         required: true
-    },
-    imgAlt: {
-        type: String,
-        required: true 
-    },
-    page: {
-        type: String,
-        required: true 
     }
 });
 

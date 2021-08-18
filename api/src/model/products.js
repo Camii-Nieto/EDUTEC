@@ -13,14 +13,10 @@ const Product = mongoose.model('Product', {
         type: String,
         required: true
     },
-    imgAlt: {
+    category : {
         type: String,
-        required: true 
-    },
-    category: {
-        type: String,
-        required: true 
-    }
+        required: true        
+        }
 });
 
 module.exports = Product;
