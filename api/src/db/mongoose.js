@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = "mongodb://127.0.0.1:27017/edutec";
+const uri = "mongodb+srv://EDUTEC:<password>@cluster0.kena6.mongodb.net/edutec?retryWrites=true&w=majority";
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
