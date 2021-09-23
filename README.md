@@ -44,7 +44,7 @@ La api consta de dos colecciones, una consta de productos y la otra de servicios
 
 #### Algunas especificaciones de la página
 
-Ya que la página se divide en dos servicios diferentes (Servicio de electricista matriculado y Venta de materiales) se utilizo en el proyecto las iniciales de cada uno para diferenciar los patials que correspondian a cada archivo EJS.
+Ya que la página se divide en dos servicios diferentes (Servicio de electricista matriculado y Venta de materiales) se utilizo en el proyecto las iniciales de cada uno para diferenciar los partials que correspondian a cada archivo EJS.
 
 La página se conecta a dos colecciones proporcionadas por la base de datos, una consta de productos, destinada a generar cards, y la otra de servicios que se utiliza en este momento solo para la zona de selección de servicios, pero también se puede ingresar una imagen y una descripción del servicio, esto es para que en un futuro se generen archivos dinámicos para exhibir los servicios más a detalle.
 
